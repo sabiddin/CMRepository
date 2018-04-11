@@ -7,3 +7,12 @@ c:\users\sabiddin\source\repos\CM\CM.Application\obj\Debug\CM.Application.csproj
 c:\users\sabiddin\source\repos\CM\CM.Application\obj\Debug\CM.Application.csproj.CopyComplete
 c:\users\sabiddin\source\repos\CM\CM.Application\obj\Debug\CM.Application.dll
 c:\users\sabiddin\source\repos\CM\CM.Application\obj\Debug\CM.Application.pdb
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.Application\bin\Debug\CM.Application.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.Application\bin\Debug\CM.Application.pdb
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.Application\bin\Debug\CM.Domain.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.Application\bin\Debug\CM.Domain.pdb
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.Application\obj\Debug\CM.Application.csprojResolveAssemblyReference.cache
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.Application\obj\Debug\CM.Application.csproj.CoreCompileInputs.cache
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.Application\obj\Debug\CM.Application.csproj.CopyComplete
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.Application\obj\Debug\CM.Application.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.Application\obj\Debug\CM.Application.pdb

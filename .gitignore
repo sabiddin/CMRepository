@@ -11,3 +11,10 @@
 /CM/CM.Infrastructure/obj/Release
 /CM/CM.Services/obj/Release
 /CM/CM.Test/obj/Release
+/CM/CM.ConsoleApp/debug/Release
+/CM/CM.Application/debug/Release
+/CM/CM.Data/debug/Release
+/CM/CM.Domain/debug/Release
+/CM/CM.Infrastructure/debug/Release
+/CM/CM.Services/debug/Release
+/CM/CM.Test/debug/Release

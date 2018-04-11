@@ -9,3 +9,14 @@ c:\users\sabiddin\source\repos\CM\Cm.Services\obj\Debug\Cm.Services.csproj.CoreC
 c:\users\sabiddin\source\repos\CM\Cm.Services\obj\Debug\Cm.Services.csproj.CopyComplete
 c:\users\sabiddin\source\repos\CM\Cm.Services\obj\Debug\Cm.Services.dll
 c:\users\sabiddin\source\repos\CM\Cm.Services\obj\Debug\Cm.Services.pdb
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\bin\Debug\CM.Services.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\bin\Debug\CM.Services.pdb
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\bin\Debug\CM.Application.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\bin\Debug\CM.Domain.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\bin\Debug\CM.Application.pdb
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\bin\Debug\CM.Domain.pdb
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\obj\Debug\CM.Services.csprojResolveAssemblyReference.cache
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\obj\Debug\CM.Services.csproj.CoreCompileInputs.cache
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\obj\Debug\CM.Services.csproj.CopyComplete
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\obj\Debug\CM.Services.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\Cm.Services\obj\Debug\CM.Services.pdb

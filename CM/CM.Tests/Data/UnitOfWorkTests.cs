@@ -1,6 +1,6 @@
 ﻿using CM.Application.DataAccess;
 using CM.Data;
-using CM.Data.Services;
+using CM.Data.Repositories;
 using CM.Infrasructure;
 using Moq;
 using StructureMap;

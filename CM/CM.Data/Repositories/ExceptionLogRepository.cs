@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Linq;
 using System.Threading.Tasks;
 
-namespace CM.Data.Services
+namespace CM.Data.Repositories
 {
     public class ExceptionLogRepository : BaseRepository<ExceptionLog>, IExceptionLogRepository
 	{

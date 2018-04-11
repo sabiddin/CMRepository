@@ -13,6 +13,7 @@ namespace CM.Infrasructure
                 s.Assembly("CM.Services");
                 s.IncludeNamespace("CM.Application.Interfaces");
                 s.IncludeNamespace("CM.Services");
+                s.WithDefaultConventions();
             });
             Policies.SetAllProperties(p => 
             {

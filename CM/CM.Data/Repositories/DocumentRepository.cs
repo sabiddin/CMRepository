@@ -5,7 +5,7 @@ using System.Data.Entity;
 using System.Collections.Generic;
 using System.Threading.Tasks;
 
-namespace CM.Data.Services
+namespace CM.Data.Repositories
 {
     public class DocumentRepository : BaseRepository<Document>, IDocumentRepository
     {

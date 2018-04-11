@@ -1,6 +1,6 @@
 ﻿using CM.Application.DataAccess;
 using CM.Data;
-using CM.Data.Services;
+using CM.Data.Repositories;
 using StructureMap;
 using System;
 using System.Collections.Generic;
@@ -19,12 +19,19 @@ namespace CM.Infrasructure
                 s.Assembly("CM.Data");
                 s.IncludeNamespace("CM.Application.DataAccess");
                 s.IncludeNamespace("CM.Data.Services");
+                s.IncludeNamespace("CM.Data.Repositories");
+                s.WithDefaultConventions();
             });
             Policies.SetAllProperties(p =>
             {
                 p.WithAnyTypeFromNamespace("CM.Application.DataAccess");
                 p.WithAnyTypeFromNamespace("CM.Data.Services");
-            });           
+                p.WithAnyTypeFromNamespace("CM.Data.Repositories");
+                p.WithAnyTypeFromNamespace("CM.Data");
+            });
+            For<IUnitOfWork>().Use<UnitOfWork>();
+   
+            
         }
     }
 }

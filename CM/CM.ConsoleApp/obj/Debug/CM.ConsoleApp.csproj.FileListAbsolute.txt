@@ -35,3 +35,8 @@ C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\obj\Debug\CM.Console
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\obj\Debug\CM.ConsoleApp.csproj.CopyComplete
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\obj\Debug\CM.ConsoleApp.exe
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\obj\Debug\CM.ConsoleApp.pdb
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\EntityFramework.xml
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\CM.Data.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\EntityFramework.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\CM.Data.pdb
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\CM.Data.dll.config

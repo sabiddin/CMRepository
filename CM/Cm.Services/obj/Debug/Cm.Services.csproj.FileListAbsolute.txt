@@ -1,0 +1,11 @@
+c:\users\sabiddin\source\repos\CM\Cm.Services\bin\Debug\Cm.Services.dll
+c:\users\sabiddin\source\repos\CM\Cm.Services\bin\Debug\Cm.Services.pdb
+c:\users\sabiddin\source\repos\CM\Cm.Services\bin\Debug\CM.Application.dll
+c:\users\sabiddin\source\repos\CM\Cm.Services\bin\Debug\CM.Domain.dll
+c:\users\sabiddin\source\repos\CM\Cm.Services\bin\Debug\CM.Application.pdb
+c:\users\sabiddin\source\repos\CM\Cm.Services\bin\Debug\CM.Domain.pdb
+c:\users\sabiddin\source\repos\CM\Cm.Services\obj\Debug\Cm.Services.csprojResolveAssemblyReference.cache
+c:\users\sabiddin\source\repos\CM\Cm.Services\obj\Debug\Cm.Services.csproj.CoreCompileInputs.cache
+c:\users\sabiddin\source\repos\CM\Cm.Services\obj\Debug\Cm.Services.csproj.CopyComplete
+c:\users\sabiddin\source\repos\CM\Cm.Services\obj\Debug\Cm.Services.dll
+c:\users\sabiddin\source\repos\CM\Cm.Services\obj\Debug\Cm.Services.pdb

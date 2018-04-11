@@ -1,0 +1,6 @@
+c:\users\sabiddin\source\repos\CM\CM.Domain\bin\Debug\CM.Domain.dll
+c:\users\sabiddin\source\repos\CM\CM.Domain\bin\Debug\CM.Domain.pdb
+c:\users\sabiddin\source\repos\CM\CM.Domain\obj\Debug\CM.Domain.csprojResolveAssemblyReference.cache
+c:\users\sabiddin\source\repos\CM\CM.Domain\obj\Debug\CM.Domain.csproj.CoreCompileInputs.cache
+c:\users\sabiddin\source\repos\CM\CM.Domain\obj\Debug\CM.Domain.dll
+c:\users\sabiddin\source\repos\CM\CM.Domain\obj\Debug\CM.Domain.pdb

@@ -3,3 +3,11 @@
 ################################################################################
 
 /CM/.vs/CM/v15
+/.vs
+/CM/CM.ConsoleApp/obj/Release
+/CM/CM.Application/obj/Release
+/CM/CM.Data/obj/Release
+/CM/CM.Domain/obj/Release
+/CM/CM.Infrastructure/obj/Release
+/CM/CM.Services/obj/Release
+/CM/CM.Test/obj/Release

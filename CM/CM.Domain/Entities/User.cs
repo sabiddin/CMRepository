@@ -1,11 +1,17 @@
-﻿namespace CM.Domain.Entities
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace CM.Domain.Entities
 {
     public class User
-    {
-        public int UserId { get; set; }
-        public string FName { get; set; }
-        public string LName { get; set; }
-
-        public string FullName { get { return FName + " " + LName; } }
+    {        
+        public int UserID { get; set; }
+        public string Username { get; set; }
+        public string Password { get; set; }
+        public bool? Locked { get; set; }
+        public DateTime? DateAdded { get; set; }
     }
 }

@@ -29,8 +29,13 @@ namespace CM.Infrasructure
                 p.WithAnyTypeFromNamespace("CM.Data.Repositories");
                 p.WithAnyTypeFromNamespace("CM.Data");
             });
-            For<IUnitOfWork>().Use<UnitOfWork>();
-   
+            For<IUnitOfWorkFactory>().Use<UnitOfWorkFactory>();
+            For<IUnitOfWork>().Use<UnitOfWork>().AlwaysUnique();
+            For<ITransactionFactory>().Use<TransactionFactory>();
+            For<IDbTransaction>().Use(t => t.GetInstance<ITransactionFactory>().GetTransaction());
+            For<IDboContextFactory>().Use<DboContextFactory>();
+            For<IDboContext>().Use(d => d.GetInstance<IDboContextFactory>().GetContext());
+            Profile(Constants.Profile.UnitOfWork, p => p.For<IDboContext>().Use(c => c.GetInstance<IDboContextFactory>().GetContext()));   
             
         }
     }

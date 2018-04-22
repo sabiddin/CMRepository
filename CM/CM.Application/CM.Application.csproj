@@ -41,12 +41,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
-    <Compile Include="DataAccess\IDocumentRepository.cs" />
-    <Compile Include="DataAccess\IExceptionLogRepository.cs" />
     <Compile Include="DataAccess\IRepository.cs" />
     <Compile Include="DataAccess\IUnitOfWork.cs" />
-    <Compile Include="Interfaces\IDocumentLibraryService.cs" />
-    <Compile Include="Interfaces\IExceptionLogService.cs" />
+    <Compile Include="DataAccess\IUserRepository.cs" />
+    <Compile Include="Interfaces\IUserService.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

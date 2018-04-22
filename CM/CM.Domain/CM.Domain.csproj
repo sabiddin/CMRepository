@@ -40,12 +40,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Entities\DocumentLibrary.cs" />
-    <Compile Include="Entities\ExceptionLog.cs" />
-    <Compile Include="Entities\Facility.cs" />
     <Compile Include="Entities\User.cs" />
-    <Compile Include="Entities\Visit.cs" />
-    <Compile Include="Entities\VisitType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

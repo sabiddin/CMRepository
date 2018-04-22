@@ -31,11 +31,16 @@ namespace CM.Data
         public readonly IContainer container;
         public readonly IDboContext dboContext;
 
-        [SetterProperty]
-        public IDocumentRepository DocumentMetaData { get; set; }
+        //[SetterProperty]
+        //public IDocumentRepository DocumentMetaData { get; set; }
+
+        //[SetterProperty]
+        //public IExceptionLogRepository Exceptions { get; set; }
 
         [SetterProperty]
-        public IExceptionLogRepository Exceptions { get; set; }
+        public IUserRepository Users { get; set; }
+
+
 
         public UnitOfWork(IContainer container, IDboContext dboContext)
         {

@@ -40,3 +40,8 @@ C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\CM.Data.dl
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\EntityFramework.dll
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\CM.Data.pdb
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\CM.Data.dll.config
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\CM.ConsoleApp.exe.config
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\EntityFramework.SqlServer.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\EntityFramework.SqlServer.xml
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\CM.Services.dll
+C:\Source\Repository\sabiddin\CMRepository\CM\CM.ConsoleApp\bin\Debug\CM.Services.pdb

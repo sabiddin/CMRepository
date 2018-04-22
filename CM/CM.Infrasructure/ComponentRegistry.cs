@@ -20,6 +20,7 @@ namespace CM.Infrasructure
                 p.WithAnyTypeFromNamespace("CM.Application.Interfaces");
                 p.WithAnyTypeFromNamespace("CM.Services");
             });
+            For<IUserService>().Use<UserService>();
         }
     }
 }

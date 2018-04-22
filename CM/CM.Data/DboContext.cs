@@ -15,7 +15,7 @@ namespace CM.Data
     {
         public IDboContext GetContext()
         {
-            var db = new DboContext("WoundExpert");
+            var db = new DboContext("CM");
 
             db.Database.Log = Console.WriteLine;
 
@@ -25,8 +25,10 @@ namespace CM.Data
 
     public interface IDboContext
     {
-        DbSet<Document> DocumentMetaData { get; set; }
-        DbSet<ExceptionLog> ExceptionLogs { get; set; }
+        //DbSet<Document> DocumentMetaData { get; set; }
+        //DbSet<ExceptionLog> ExceptionLogs { get; set; }
+        DbSet<User> Users { get; set; }
+
 
         void Dispose();
         int SaveChanges();
@@ -41,54 +43,58 @@ namespace CM.Data
     {
         public DboContext(string nameOrConnectionString) : base(nameOrConnectionString) { }
 
-        public DbSet<Document> DocumentMetaData { get; set; }
-        public DbSet<ExceptionLog> ExceptionLogs { get; set; }			// wasn't sure if this data is also meta data? qualifying name can be changed
+        //public DbSet<Document> DocumentMetaData { get; set; }
+        //public DbSet<ExceptionLog> ExceptionLogs { get; set; }			// wasn't sure if this data is also meta data? qualifying name can be changed
+        public DbSet<User> Users { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
-            modelBuilder.Entity<Document>()
-                .ToTable("tbl_DocumentLibrary")
-                .HasKey(dl => dl.DocumentID);
-
-            modelBuilder.Entity<Document>()
-                .HasOptional(dl => dl.LastUpdatedUser)
-                .WithMany()
-                .HasForeignKey(dl => dl.LastUpdatedBy);
-
-            modelBuilder.Entity<Visit>()
-                .ToTable("tbl_Visit")
-                .HasOptional(v => v.VisitType)
-                .WithMany()
-                .HasForeignKey(v => v.VisitTypeID);
-
-            modelBuilder.Entity<Visit>()
-                .HasKey(v => v.VisitID);
-
-            modelBuilder.Entity<VisitType>()
-                .ToTable("tbl_CODE_VisitType")
-                .HasKey(v => v.Code);
-
             modelBuilder.Entity<User>()
-                .ToTable("tbl_Users")
-                .HasKey(v => v.UserId);
+                .ToTable("tbl_User")
+                .HasKey(u => u.UserID);
+            //modelBuilder.Entity<Document>()
+            //    .ToTable("tbl_DocumentLibrary")
+            //    .HasKey(dl => dl.DocumentID);
 
-            modelBuilder.Entity<Facility>()
-                .ToTable("tbl_facility")
-                .HasKey(dl => dl.FacilityID);
+            //modelBuilder.Entity<Document>()
+            //    .HasOptional(dl => dl.LastUpdatedUser)
+            //    .WithMany()
+            //    .HasForeignKey(dl => dl.LastUpdatedBy);
 
-            modelBuilder.Entity<ExceptionLog>()
-                .ToTable("tbl_Exceptions")
-                .HasKey(e => e.ExceptionID);
+            //modelBuilder.Entity<Visit>()
+            //    .ToTable("tbl_Visit")
+            //    .HasOptional(v => v.VisitType)
+            //    .WithMany()
+            //    .HasForeignKey(v => v.VisitTypeID);
 
-            modelBuilder.Entity<ExceptionLog>()
-                .HasRequired(e => e.ExceptionUser)
-                .WithMany()
-                .HasForeignKey(e => e.UserID);
+            //modelBuilder.Entity<Visit>()
+            //    .HasKey(v => v.VisitID);
 
-            modelBuilder.Entity<ExceptionLog>()
-                .HasRequired(e => e.ExceptionFacility)
-                .WithMany()
-                .HasForeignKey(e => e.FacilityID);
+            //modelBuilder.Entity<VisitType>()
+            //    .ToTable("tbl_CODE_VisitType")
+            //    .HasKey(v => v.Code);
+
+            //modelBuilder.Entity<User>()
+            //    .ToTable("tbl_Users")
+            //    .HasKey(v => v.UserId);
+
+            //modelBuilder.Entity<Facility>()
+            //    .ToTable("tbl_facility")
+            //    .HasKey(dl => dl.FacilityID);
+
+            //modelBuilder.Entity<ExceptionLog>()
+            //    .ToTable("tbl_Exceptions")
+            //    .HasKey(e => e.ExceptionID);
+
+            //modelBuilder.Entity<ExceptionLog>()
+            //    .HasRequired(e => e.ExceptionUser)
+            //    .WithMany()
+            //    .HasForeignKey(e => e.UserID);
+
+            //modelBuilder.Entity<ExceptionLog>()
+            //    .HasRequired(e => e.ExceptionFacility)
+            //    .WithMany()
+            //    .HasForeignKey(e => e.FacilityID);
 
         }
     }

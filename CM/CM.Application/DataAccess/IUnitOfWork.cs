@@ -11,8 +11,9 @@ namespace CM.Application.DataAccess
 
     public interface IUnitOfWork : IDisposable
     {
-        IDocumentRepository DocumentMetaData { get; }
-        IExceptionLogRepository Exceptions { get; set; }
+        //IDocumentRepository DocumentMetaData { get; }
+        //IExceptionLogRepository Exceptions { get; set; }
+        IUserRepository Users { get; set; }
 
         int SaveChanges();
 

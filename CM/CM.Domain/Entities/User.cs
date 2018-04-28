@@ -12,6 +12,8 @@ namespace CM.Domain.Entities
         public string Username { get; set; }
         public string Password { get; set; }
         public bool? Locked { get; set; }
+        public int? RoleID { get; set; }
         public DateTime? DateAdded { get; set; }
+        public Role Role { get; set; }
     }
 }

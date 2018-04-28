@@ -58,6 +58,8 @@
     <Compile Include="Constants.cs" />
     <Compile Include="DboContext.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Repositories\RepresentativeRepository.cs" />
+    <Compile Include="Repositories\RoleRepository.cs" />
     <Compile Include="Repositories\UserRepository.cs" />
     <Compile Include="TransactionFactory.cs" />
     <Compile Include="UnitOfWork.cs" />

@@ -22,6 +22,11 @@ namespace CM.Data
         {
             return db.Set<TEntity>().Find(new object[] { Id });
         }
+        
+        public virtual List<TEntity> FindAll()
+        {
+            return db.Set<TEntity>().ToList();
+        }
 
         public virtual List<TEntity> FindBy(Expression<Func<TEntity, bool>> predicate)
         {

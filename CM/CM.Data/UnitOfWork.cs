@@ -39,6 +39,10 @@ namespace CM.Data
 
         [SetterProperty]
         public IUserRepository Users { get; set; }
+        [SetterProperty]
+        public IRoleRepository Roles { get; set; }
+        [SetterProperty]
+        public IRepresentativeRepository Representatives { get; set; }
 
 
 

@@ -28,6 +28,8 @@ namespace CM.Data
         //DbSet<Document> DocumentMetaData { get; set; }
         //DbSet<ExceptionLog> ExceptionLogs { get; set; }
         DbSet<User> Users { get; set; }
+        DbSet<Role> Roles { get; set; }
+        DbSet<Representative> Representatives { get; set; }
 
 
         void Dispose();
@@ -46,12 +48,28 @@ namespace CM.Data
         //public DbSet<Document> DocumentMetaData { get; set; }
         //public DbSet<ExceptionLog> ExceptionLogs { get; set; }			// wasn't sure if this data is also meta data? qualifying name can be changed
         public DbSet<User> Users { get; set; }
+        public DbSet<Role> Roles { get; set; }
+        public DbSet<Representative> Representatives { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
             modelBuilder.Entity<User>()
                 .ToTable("tbl_User")
-                .HasKey(u => u.UserID);
+                .HasKey(u => u.UserID)
+                .HasOptional(u => u.Role)
+                .WithMany()
+                .HasForeignKey(u => u.RoleID);
+                                
+            modelBuilder.Entity<Role>()
+                .ToTable("tbl_Role")
+                .HasKey(u => u.RoleID);
+
+            modelBuilder.Entity<Representative>()
+                 .ToTable("tbl_Representative")
+                 .HasKey(u => u.RepresentativeID)
+                 .HasOptional(u => u.User)
+                 .WithMany()
+                 .HasForeignKey(u => u.UserID);
             //modelBuilder.Entity<Document>()
             //    .ToTable("tbl_DocumentLibrary")
             //    .HasKey(dl => dl.DocumentID);

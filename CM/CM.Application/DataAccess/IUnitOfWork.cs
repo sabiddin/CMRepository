@@ -14,6 +14,8 @@ namespace CM.Application.DataAccess
         //IDocumentRepository DocumentMetaData { get; }
         //IExceptionLogRepository Exceptions { get; set; }
         IUserRepository Users { get; set; }
+        IRoleRepository Roles { get; set; }
+        IRepresentativeRepository Representatives { get; set; }
 
         int SaveChanges();
 

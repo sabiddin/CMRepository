@@ -21,10 +21,18 @@ namespace CM.Services
 
         public void AddUser(User user)
         {
-            using (var db= _unitOfWorkFactory.GetUnitOfWork())
+            try
             {
-                db.Users.Add(user);
-                db.SaveChanges();
+                using (var db = _unitOfWorkFactory.GetUnitOfWork())
+                {
+                    db.Users.Add(user);
+                    db.SaveChanges();
+                }
+            }
+            catch (Exception ex)
+            {
+
+                throw ex;
             }
         }
         

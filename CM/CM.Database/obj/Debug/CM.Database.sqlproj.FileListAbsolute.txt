@@ -2,9 +2,5 @@ C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\bin\Debug\CM.Database.
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\bin\Debug\CM.Database.dll
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\bin\Debug\CM.Database.pdb
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\obj\Debug\CM.Database.sqlprojResolveAssemblyReference.cache
-C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\obj\Debug\Model.xml
-C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\obj\Debug\refactor.xml
-C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\obj\Debug\postdeploy.sql
-C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\obj\Debug\predeploy.sql
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\obj\Debug\CM.Database.dll
 C:\Source\Repository\sabiddin\CMRepository\CM\CM.Database\obj\Debug\CM.Database.pdb

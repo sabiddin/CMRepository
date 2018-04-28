@@ -13,6 +13,7 @@ namespace CM.Application.DataAccess
         List<TEntity> FindBy(Expression<Func<TEntity, bool>> predicate);
         Task<List<TEntity>> FindByAsync(Expression<Func<TEntity, bool>> predicate);
 
+        List<TEntity> FindAll();
         void Add(TEntity entity);
         void Update(TEntity entity);
         void Delete(TEntity entity);

@@ -65,6 +65,8 @@
   </ItemGroup>
   <ItemGroup>
     <Build Include="dbo\Tables\tbl_User.sql" />
+    <Build Include="dbo\Tables\tbl_Role.sql" />
+    <Build Include="dbo\Tables\tbl_Representative.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\StageUserData.sql" />

@@ -12,6 +12,7 @@ namespace CM.Domain.Entities
         public string FirstName { get; set; }
         public string  MiddleName { get; set; }
         public string LastName { get; set; }
+        public string FullName { get { return FirstName + " " + LastName; } }
         public bool? Active { get; set; }
         public DateTime? DateAdded { get; set; }
         public int? UserID { get; set; }

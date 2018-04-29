@@ -10,7 +10,7 @@
                 <div class="row">
                     <div class="input-group has-feedback has-search">
                         <asp:Label CssClass="control-label" Text="Search by SSN" runat="server" />
-                        <asp:TextBox CssClass="form-control" runat="server" ID="txtClientSSN" />
+                        <asp:TextBox CssClass="form-control" MaxLength="9" runat="server" ID="txtClientSSN" />
                         <asp:Button CssClass="btn btn-default" Text="Search" runat="server" ID="btnSearch" OnClick="btnSearch_Click" />
                     </div>
                 </div>
@@ -90,6 +90,9 @@
                             </div>
                         </ItemTemplate>
                     </asp:Repeater>
+                </div>
+                <div class="row">                    
+                    <a class="btn btn-default" href="#" id="btnAddClient" runat="server">Add New Client</a>
                 </div>
             </div>
         </ContentTemplate>

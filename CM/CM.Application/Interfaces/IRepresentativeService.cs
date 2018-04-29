@@ -14,5 +14,6 @@ namespace CM.Application.Interfaces
         void AddRepresentative(Representative user);
         void UpdateRepresentative(Representative user);
         void DeleteRepresentativeByID(int id);
+        List<Representative> GetAll();
     }
 }

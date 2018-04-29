@@ -55,9 +55,7 @@
          <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="MiddleName" CssClass="col-md-2 control-label">Middle Name</asp:Label>
             <div class="col-md-10">
-                <asp:TextBox runat="server" ID="MiddleName" CssClass="form-control" TextMode="SingleLine" />
-                <asp:RequiredFieldValidator runat="server" ControlToValidate="MiddleName"
-                    CssClass="text-danger" ErrorMessage="The MiddleName field is required." />
+                <asp:TextBox runat="server" ID="MiddleName" CssClass="form-control" TextMode="SingleLine" />               
             </div>
         </div>
          <div class="form-group">

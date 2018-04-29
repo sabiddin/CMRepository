@@ -48,6 +48,11 @@ namespace CM.Services
             }
         }
 
+        public List<Representative> GetAll()
+        {
+            return _RepresentativeRepository.FindAll();
+        }
+
         public Representative GetRepresentativeByID(int id)
         {
             return _RepresentativeRepository.FindById(id);

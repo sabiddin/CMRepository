@@ -42,6 +42,7 @@ namespace CM.Web.Account
                 DateAdded=DateTime.Now
             };
             RepresentativeService.AddRepresentative(representative);
+            Response.Redirect("~/ClientMaintenance/SearchClient.aspx");
         }
         protected void Page_Load(Object sender, EventArgs eventArgs)
         {

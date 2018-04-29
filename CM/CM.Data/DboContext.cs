@@ -30,6 +30,7 @@ namespace CM.Data
         DbSet<User> Users { get; set; }
         DbSet<Role> Roles { get; set; }
         DbSet<Representative> Representatives { get; set; }
+        DbSet<Client> Clients { get; set; }
 
 
         void Dispose();
@@ -50,6 +51,7 @@ namespace CM.Data
         public DbSet<User> Users { get; set; }
         public DbSet<Role> Roles { get; set; }
         public DbSet<Representative> Representatives { get; set; }
+        public DbSet<Client> Clients { get; set; }
 
         protected override void OnModelCreating(DbModelBuilder modelBuilder)
         {
@@ -70,6 +72,12 @@ namespace CM.Data
                  .HasOptional(u => u.User)
                  .WithMany()
                  .HasForeignKey(u => u.UserID);
+            modelBuilder.Entity<Client>()
+               .ToTable("tbl_Client")
+               .HasKey(u => u.ClientID)
+               .HasOptional(u => u.Representative)
+               .WithMany()
+               .HasForeignKey(u => u.RepresentativeID);
             //modelBuilder.Entity<Document>()
             //    .ToTable("tbl_DocumentLibrary")
             //    .HasKey(dl => dl.DocumentID);

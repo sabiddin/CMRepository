@@ -41,11 +41,13 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class1.cs" />
+    <Compile Include="DataAccess\IClientRepository.cs" />
     <Compile Include="DataAccess\IRepository.cs" />
     <Compile Include="DataAccess\IRoleRepository.cs" />
     <Compile Include="DataAccess\IUnitOfWork.cs" />
     <Compile Include="DataAccess\IUserRepository.cs" />
     <Compile Include="DataAccess\IRepresentativeRepository.cs" />
+    <Compile Include="Interfaces\IClientService.cs" />
     <Compile Include="Interfaces\IRoleService.cs" />
     <Compile Include="Interfaces\IRepresentativeService.cs" />
     <Compile Include="Interfaces\IUserService.cs" />

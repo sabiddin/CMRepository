@@ -16,6 +16,7 @@ namespace CM.Application.DataAccess
         IUserRepository Users { get; set; }
         IRoleRepository Roles { get; set; }
         IRepresentativeRepository Representatives { get; set; }
+        IClientRepository Clients { get; set; }
 
         int SaveChanges();
 

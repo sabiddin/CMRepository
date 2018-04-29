@@ -43,6 +43,8 @@ namespace CM.Data
         public IRoleRepository Roles { get; set; }
         [SetterProperty]
         public IRepresentativeRepository Representatives { get; set; }
+        [SetterProperty]
+        public IClientRepository Clients { get; set; }
 
 
 

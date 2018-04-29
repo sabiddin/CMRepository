@@ -10,6 +10,7 @@ using CM.Application.Interfaces;
 using StructureMap.Attributes;
 using System.Web.UI.WebControls;
 using System.Web.Security;
+using System.Net;
 
 namespace CM.Web.Account
 {
@@ -41,12 +42,32 @@ namespace CM.Web.Account
 
                 // This doen't count login failures towards account lockout
                 // To enable password failures to trigger lockout, change to shouldLockout: true
-
+                bool isPersistent = false;
                 var user = UserService.GetUserByUsername(Username.Text);
                 if (user!=null && user.Password ==Password.Text)
                 {
-                    FormsAuthentication.RedirectFromLoginPage(FormsAuthentication.DefaultUrl,false);                    
-                    
+                    string userData = "ApplicationSpecific data for this user.";
+                    FormsAuthenticationTicket ticket = new FormsAuthenticationTicket(1,
+                                      user.Username,
+                                      DateTime.Now,
+                                      DateTime.Now.AddMinutes(30),
+                                      isPersistent,
+                                      userData,
+                                      FormsAuthentication.FormsCookiePath);
+
+                    // Encrypt the ticket.
+                    string encTicket = FormsAuthentication.Encrypt(ticket);
+
+                    // Create the cookie.
+                    Response.Cookies.Add(new HttpCookie(FormsAuthentication.FormsCookieName, encTicket));
+
+                    // Redirect back to original URL.
+                    Response.Redirect(FormsAuthentication.GetRedirectUrl(user.Username, isPersistent));
+
+                    FormsAuthentication.SetAuthCookie(user.Username, true);
+
+                    //FormsAuthentication.RedirectFromLoginPage(FormsAuthentication.DefaultUrl,false);                                        
+                    IdentityHelper.RedirectToReturnUrl(Request.QueryString["ReturnUrl"], Response);
 
                     //Response.Redirect("~/ClientMaintenance/SearchClient.aspx");
                 }

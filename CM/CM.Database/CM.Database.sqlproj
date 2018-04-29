@@ -67,8 +67,10 @@
     <Build Include="dbo\Tables\tbl_User.sql" />
     <Build Include="dbo\Tables\tbl_Role.sql" />
     <Build Include="dbo\Tables\tbl_Representative.sql" />
+    <Build Include="dbo\Tables\tbl_Client.sql" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Scripts\StageUserData.sql" />
+    <None Include="Scripts\StageClients.sql" />
   </ItemGroup>
 </Project>

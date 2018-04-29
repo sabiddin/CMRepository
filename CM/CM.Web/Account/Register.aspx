@@ -1,14 +1,13 @@
 ﻿<%@ Page Title="Register" Language="C#" MasterPageFile="~/Site.Master" AutoEventWireup="true" CodeBehind="Register.aspx.cs" Inherits="CM.Web.Account.Register" %>
-
 <asp:Content runat="server" ID="BodyContent" ContentPlaceHolderID="MainContent">
     <h2><%: Title %>.</h2>
     <p class="text-danger">
         <asp:Literal runat="server" ID="ErrorMessage" />
     </p>
-
-    <div class="form-horizontal">
-        <h4>Create a new account</h4>
-        <hr />
+    <div class="panel panel-default">
+        <div class="panel-heading"><h4>Create a new account for a representative</h4></div>
+        <div class="panel-body">
+    <div class="form-horizontal">       
         <asp:ValidationSummary runat="server" CssClass="text-danger" />
         <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Username" CssClass="col-md-2 control-label">Username</asp:Label>
@@ -38,8 +37,8 @@
         </div>
          <div class="form-group">
             <asp:Label runat="server" AssociatedControlID="Role" CssClass="col-md-2 control-label">Role</asp:Label>
-            <div class="col-md-3">
-                <asp:DropDownList runat="server" ID="Role" TextMode="Password" CssClass="form-control" />
+            <div class="col-md-10">
+                <asp:DropDownList runat="server" ID="Role" CssClass="form-control" style="width:auto !important" />
                 <asp:RequiredFieldValidator runat="server" ControlToValidate="Role"
                     CssClass="text-danger" Display="Dynamic" ErrorMessage="The Role field is required." />               
             </div>
@@ -84,5 +83,7 @@
                 <asp:Button runat="server" OnClick="CreateUser_Click" Text="Register" CssClass="btn btn-default" />
             </div>
         </div>
+    </div>
+            </div>
     </div>
 </asp:Content>
